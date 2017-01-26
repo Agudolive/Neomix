@@ -66,9 +66,9 @@ void afficherPlateau(const Grille& gr)
 		for (int k = 0; k < NDIM; ++k)
 		{
 			if(gr[j][k]==1)
-				cout << "\033[1;32m" << symboleDe(gr[j][k]) << "\033[0m" << "|";
+				cout << symboleDe(gr[j][k]) << "|";
 			else if(gr[j][k]==2)
-				cout << "\033[1;31m" << symboleDe(gr[j][k]) << "\033[0m" << "|";
+				cout << symboleDe(gr[j][k]) << "|";
 			else
 				cout << symboleDe(gr[j][k]) << "|";
 		}
